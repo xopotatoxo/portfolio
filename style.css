@@ -1,0 +1,331 @@
+/* Common styles for all screen sizes */
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: grey;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px saddlebrown;
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.background-index {
+  position: relative;
+  background-color: darkgoldenrod;
+  background-size: cover;
+  background-blend-mode: hue;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(Images/headerBackground.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-bottom: 30px;
+}
+
+.title-name {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: wheat;
+}
+
+.index-title-name {
+  text-align: center;
+  margin: 40px 0% 10px 20%;
+  font-size: 3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: black;
+}
+
+.title-name-large {
+  font-size: 8em;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.content-section {
+  margin: 1em;
+  padding-bottom: 2em; /* Add some padding at the bottom to create space between project descriptions and footer */
+  min-height: calc(100vh - 180px); /* Set min-height to occupy available space (viewport height - header height - footer height) */
+  position: relative;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.about-aman-image {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.main-footer {
+  background-color: beige;
+  color: white;
+  padding: 0.25em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-footer-title {
+  text-align: left;
+  margin: 0;
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: black;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.main-footer-container ul {
+  text-align: end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav li {
+  padding: 0.5em;
+}
+
+.footer-nav img {
+  width: 15px;
+  height: 15px;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: 0.5em 15% 2em 15%;
+  color: white;
+  border: 2px solid blanchedalmond;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5%;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: grey;
+}
+
+.description-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.description-row-child {
+  border-bottom: none;
+}
+
+.description-title {
+  padding-right: 0.5em;
+}
+
+.description-paragraph {
+  display: block;
+  padding-right: 0.5em;
+}
+
+.project {
+  position: relative;
+  display: inline-block;
+}
+
+.project-title {
+  background-color: beige;
+  padding: 10px;
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-description {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: beige;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+
+.project:hover .project-description {
+  height: 300%;
+  opacity: 1;
+  padding: 10px;
+}
+
+.name-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(245, 245, 220, 0.987);
+  padding: 5vw;
+  border-radius: 5px;
+  max-width: 800px;
+  text-align: center;
+}
+.name {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 2vw;
+  font-weight: normal;
+  color: gray;
+  margin-top: 10px;
+}
+
+.content-section {
+  text-align: center;
+}
+
+.about-box {
+  background-color: rgba(245, 245, 220, 0.987);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-aman-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-content {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+  .background-index {
+    background-repeat: no-repeat;
+  }
+
+  .name-box {
+    position: static;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+  }
+
+  .image-container {
+    margin-bottom: 10px;
+  }
+
+  .about-aman-image {
+    max-width: 80%;
+  }
+
+  .name {
+    font-size: 6vw;
+  }
+
+  .headline {
+    font-size: 3vw;
+  }
+
+  .about-box {
+    padding: 10px;
+  }
+
+  .about-title {
+    font-size: 20px;
+  }
+
+  .about-content {
+    font-size: 14px;
+  }
+}
